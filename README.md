@@ -21,6 +21,13 @@ Or install it yourself as:
 ## Usage
 
 Provides generated html code for rails applications
+```ruby
+  before_action :set_copyright
+
+  def set_copyright
+    @copyright = NickCoolViewTools::Render.copyright 'Gregory DeNinno', 'All rights reserved'
+  end
+  ```
 
 ## Development
 
